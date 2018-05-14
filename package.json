@@ -1,0 +1,19 @@
+{
+  "name": "randy_portfolio",
+  "version": "1.0.0",
+  "description": "Randy's new creative portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randymt/randyportfolio2018.git"
+  },
+  "author": "Randy Taschner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randymt/randyportfolio2018/issues"
+  },
+  "homepage": "https://github.com/randymt/randyportfolio2018#readme"
+}
