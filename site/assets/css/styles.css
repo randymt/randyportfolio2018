@@ -6314,7 +6314,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -182px;
+    margin-left: -174px;
     margin-top: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #474747; }
@@ -6325,16 +6325,20 @@ body {
     margin-top: 130px;
     margin-left: -170px;
     display: flex;
-    width: 323px; }
+    width: 344px;
+    background: salmon; }
     .logo-container .link-bar a.link-item {
+      color: #474747;
       text-align: center;
-      margin: auto;
-      border: 1px black solid;
-      height: 35px;
-      width: 35px;
-      text-decoration: none; }
+      font-size: 1.5em;
+      text-decoration: none;
+      border: 1px solid limegreen;
+      flex-direction: column;
+      justify-content: space-between; }
+      .logo-container .link-bar a.link-item p.icon-tip {
+        font-size: 13px; }
       .logo-container .link-bar a.link-item:hover {
-        background: pink; }
+        color: #ffffff; }
 
 .blue-blur {
   height: 1074px;

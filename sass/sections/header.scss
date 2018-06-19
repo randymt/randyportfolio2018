@@ -35,7 +35,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -182px;
+    margin-left: -174px;
     margin-top: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid $grey1;
@@ -48,21 +48,26 @@
     margin-top: 130px;
     margin-left: -170px;
     display: flex;
-    width: 323px;
+    width: 344px;
+    background: salmon;
 
 
 
     a.link-item {
+      color: $grey1;
       text-align: center;
-      margin: auto;
-      border: 1px black solid;
-      // background: salmon;
-      height: 35px;
-      width: 35px;
+      font-size: 1.5em;
       text-decoration: none;
+      border: 1px solid limegreen;
+      flex-direction: column;
+      justify-content: space-between;
+
+        p.icon-tip {
+          font-size: 13px
+        }
 
       &:hover {
-        background: pink;
+        color: $white;
       }
     }
   }
