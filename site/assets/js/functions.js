@@ -8,12 +8,14 @@ $(window).scroll(function() {
   });
 
   $('.blue-blur').css({
-    'transform' : 'translate(0px, '+ wScroll /10 +'%)'
+    'transform' : 'translate(0px, '+ wScroll /8 +'%)'
   });
 
+
+
   $('.purple-blur').css({
-    'transform' : 'translate(0px, -'+ wScroll /45 +'%)',
-    'transform' : 'rotate(-'+ wScroll /10 +'deg)'
+    'transform' : 'translate(0px, -'+ wScroll /10 +'%)',
+    // 'transform' : 'rotate(-'+ wScroll /10 +'deg)'
   });
 
 

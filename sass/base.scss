@@ -1,6 +1,33 @@
+
 body {
-  font-family: 'Montserrat';
-  color: $grey1;
+  font-family: $font1;
+  color: $grey2;
   font-size: 1em;
-  background: $grey3;
+  background: $grey1;
+}
+
+
+// TITLES //
+
+@mixin titleStyles {
+    display: block;
+    width: 328px;
+    padding-bottom: 17px;
+    font-weight: $font-L;
+    font-family: $font1;
+    font-size: $titleSize;
+    border-bottom: 1px solid $grey2;
+    text-align: center;
+    margin: 140px auto 0 auto;
+    // background: honeydew;
+
+}
+
+
+
+// PROJECTS //
+
+@mixin projectLogo {
+  width: 100%;
+  margin: auto;
 }

@@ -6283,14 +6283,14 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   color: #474747;
   font-size: 1em;
   background: #212121; }
 
 .logo-area {
   position: relative;
-  height: 1074px;
+  height: 100vh;
   overflow: hidden; }
 
 .logo-container {
@@ -6299,7 +6299,8 @@ body {
   top: 50%;
   margin-top: -192.5px;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  transition: all .2s ease; }
   .logo-container .logo {
     height: 199px;
     width: 100%;
@@ -6318,25 +6319,26 @@ body {
     margin-top: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #474747; }
+  .logo-container .alt-text-color {
+    color: #707070; }
   .logo-container .link-bar {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 130px;
-    margin-left: -170px;
+    margin-top: 120px;
+    margin-left: -151px;
+    width: 300px;
     display: flex;
-    width: 344px;
-    background: salmon; }
+    justify-content: space-between;
+    flex-direction: row; }
     .logo-container .link-bar a.link-item {
       color: #474747;
       text-align: center;
       font-size: 1.5em;
       text-decoration: none;
-      border: 1px solid limegreen;
-      flex-direction: column;
-      justify-content: space-between; }
-      .logo-container .link-bar a.link-item p.icon-tip {
-        font-size: 13px; }
+      height: 30px;
+      overflow: hidden;
+      transition: all .9s; }
       .logo-container .link-bar a.link-item:hover {
         color: #ffffff; }
 
@@ -6362,8 +6364,29 @@ body {
   top: 100px;
   opacity: .85; }
 
-.work article {
-  padding: 100px 0;
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center; }
+.work {
+  overflow: hidden; }
+  .work .titles {
+    display: block;
+    width: 328px;
+    padding-bottom: 17px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.875em;
+    border-bottom: 1px solid #474747;
+    text-align: center;
+    margin: 140px auto 0 auto; }
+  .work .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 64px;
+    max-width: 1460px;
+    margin: 120px auto 120px auto; }
+    .work .project-container .project-item {
+      background: honeydew;
+      border-radius: 5px;
+      height: 293px; }
+    .work .project-container .p-1 {
+      background: salmon;
+      grid-row: 1 / 3;
+      height: 651px; }

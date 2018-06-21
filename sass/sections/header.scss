@@ -4,19 +4,19 @@
 
 .logo-area {
   position: relative;
-  height: 1074px;
+  height: 100vh;
   overflow: hidden;
 
 }
 
 .logo-container {
   position: absolute;
-  // background: teal;
   height: 385px;
   top: 50%;
   margin-top: -192.5px;
   width: 100%;
   z-index: 1;
+  transition: all .2s ease;
 
   .logo {
     height: 199px;
@@ -24,7 +24,6 @@
     background: url(../img/diamond-logo.png);
     background-position: center;
     background-repeat: no-repeat;
-    // background-color: green;
     position: absolute;
   }
 
@@ -38,37 +37,58 @@
     margin-left: -174px;
     margin-top: 40px;
     padding-bottom: 20px;
-    border-bottom: 1px solid $grey1;
+    border-bottom: 1px solid $grey2;
+  }
+
+  .alt-text-color {
+    color: $grey3;
   }
 
   .link-bar {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 130px;
-    margin-left: -170px;
+    margin-top: 120px;
+    margin-left: -151px;
+    width: 300px;
     display: flex;
-    width: 344px;
-    background: salmon;
+    justify-content: space-between;
+    flex-direction: row;
+
 
 
 
     a.link-item {
-      color: $grey1;
+      color: $grey2;
       text-align: center;
       font-size: 1.5em;
       text-decoration: none;
-      border: 1px solid limegreen;
-      flex-direction: column;
-      justify-content: space-between;
+      height: 30px;
+      overflow: hidden;
+      transition: all .9s;
 
-        p.icon-tip {
-          font-size: 13px
-        }
 
       &:hover {
         color: $white;
+        // overflow: visible;
       }
+
+
+
+      // p.link-tip {
+      //   font-size: 13px;
+      //   opacity: 0;
+      //   visibility: hidden;
+      //   transition: all 0.2s ease;
+      // }
+      //
+      //   &:hover .link-tip {
+      //     opacity: 1;
+      //     visibility: visible;
+      //   }
+
+
+
     }
   }
 }
