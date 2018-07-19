@@ -95,13 +95,12 @@ body {
     margin: 140px auto 0 auto; }
   .work .project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-row: 1fr;
     grid-gap: 40px;
-    border: 10px solid hotpink;
+    grid-template-columns: repeat(auto-fill, minmax(314px, 1fr));
     max-width: 1024px;
     min-height: 475px;
     margin: 120px auto 120px auto; }
     .work .project-container .project-item {
       background: #ffffff;
-      border-radius: 5px; }
+      border-radius: 5px;
+      min-height: 175px; }
