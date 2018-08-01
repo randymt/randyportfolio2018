@@ -1,0 +1,30 @@
+.education {
+  overflow: hidden;
+  color: $grey3;
+  margin-bottom: 300px;
+  
+
+  .titles {
+    @include titleStyles
+  }
+
+  .ed-container {
+    text-align: center;
+    letter-spacing: 3px;
+
+    .ed-item {
+      padding-bottom: 5px;
+    }
+
+    .degree-school {
+      font-size: $xp;
+    }
+
+    .ed-alt {
+      color: $white;
+      font-weight: $font-M;
+    }
+
+  }
+
+}

@@ -1,6 +1,7 @@
 .work {
-  // background: limegreen;
   overflow: hidden;
+  padding: 0 10px;
+  margin-top: 140px;
 
   .titles {
     @include titleStyles
@@ -11,18 +12,36 @@
     grid-gap: 40px;
     grid-template-columns: repeat(auto-fill, minmax(314px, 1fr));
 
-    // border: 10px solid hotpink;
-    // background: #bada55;
-
     max-width: 1024px;
     min-height: 475px;
-    margin: 120px auto 120px auto;
+    margin: 0 auto 300px auto;
 
     .project-item {
+      display: grid;
       background: $white;
       border-radius: 5px;
       min-height: 175px;
+      grid-template-column: 1fr;
+      align-items: center;
+      justify-content: center;
+
+
+      img {
+        width: 225px;
+
+      }
     }
+
+    a.p-1 { background: $p-1-color;}
+    a.p-2 { background: $p-2-color;}
+    a.p-3 { background: $p-3-color;}
+    a.p-4 { background-image:
+      linear-gradient(
+      to top left,
+      $p-4-color, #FF4E3E
+    );}
+    a.p-5 { background: $p-5-color;}
+    a.p-6 { background: $p-6-color;}
 
   }
 }

@@ -1,0 +1,28 @@
+.xp {
+  overflow: hidden;
+  color: $grey3;
+  margin-bottom: 300px;
+
+  .titles {
+    @include titleStyles
+  }
+
+  .xp-container {
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 20px;
+
+    .xp-item {
+      padding-bottom: 5px;
+    }
+
+    .position-company {
+      font-size: $xp;
+    }
+
+    .xp-alt {
+      color: $white;
+      font-weight: $font-M;
+    }
+  }
+}

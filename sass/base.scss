@@ -2,23 +2,27 @@
 body {
   font-family: $font1;
   color: $grey2;
-  font-size: 1em;
-  background: $grey1;
+  font-size: $base;
+  background: $grey1 url(../img/topography.svg) ;
+  background-size: 200px;
 }
 
 
 // TITLES //
 
 @mixin titleStyles {
+    color: $grey3;
     display: block;
     width: 328px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     font-weight: $font-L;
     font-family: $font1;
     font-size: $titleSize;
     border-bottom: 1px solid $grey2;
     text-align: center;
-    margin: 140px auto 0 auto;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    letter-spacing: 3px;
     // background: honeydew;
 
 }
