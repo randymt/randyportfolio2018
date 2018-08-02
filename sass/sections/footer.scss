@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid $grey2;
+  padding: 40px;
+  text-align: center;
+  color: $grey3;
+  font-weight: $font-L;
+
+  .footer-email {
+    font-size: $xp;
+  }
+
+  .copyright {
+    font-size: $cr;
+  }
+
+  .link-bar {
+    padding: 30px 0;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}

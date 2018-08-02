@@ -7,6 +7,17 @@ body {
   background-size: 200px;
 }
 
+a {
+  color: $grey3;
+  text-decoration: none;
+  transition: all .9s;
+
+
+  &:hover {
+    color: $white;
+  }
+}
+
 
 // TITLES //
 

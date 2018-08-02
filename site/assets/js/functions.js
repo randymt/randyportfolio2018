@@ -12,7 +12,6 @@ $(window).scroll(function() {
   });
 
 
-
   $('.purple-blur').css({
     'transform' : 'translate(0px, -'+ wScroll /10 +'%)',
     // 'transform' : 'rotate(-'+ wScroll /10 +'deg)'
