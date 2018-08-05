@@ -32,7 +32,13 @@ gulp.task('jade', function() {
     .pipe(jade({
       locals: YOUR_LOCALS
     }))
-    .pipe(gulp.dest('./site'))
+    .pipe(gulp.dest('./site'));
+
+    gulp.src('./jade-files/work-includes/*.jade')
+      .pipe(jade({
+        locals: YOUR_LOCALS
+      }))
+      .pipe(gulp.dest('./site/work-loads'));
 });
 
 
@@ -63,7 +69,7 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('./sass/*.scss', ['sass']);
     gulp.watch('./sass/sections/*.scss', ['sass']);
 
-    gulp.watch('./jade-files/includes/*.jade', ['jade']).on('change', browserSync.reload);
+    gulp.watch('./jade-files/includes/*.jade',['jade']).on('change', browserSync.reload);
     gulp.watch('./jade-files/*.jade', ['jade']).on('change', browserSync.reload);
 });
 

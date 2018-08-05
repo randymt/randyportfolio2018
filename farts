@@ -1,0 +1,36 @@
+$(function() {
+  workLoad();
+});
+
+
+function workLoad() {
+  $.ajaxSetup({ cache: true });
+
+  $('.project-thumb').click(function () {
+
+    var $this = $(this),
+      newFolder = $this.data('folder')
+  });
+}
+
+
+
+$(.modal).click(function() {
+  var $target = $('.modal-bg');
+  if ($target.css("display") == "none") {
+    $target.show();
+  } else {
+    $target.hide();
+  }
+});
+
+
+
+a(href="#" class="project-thumb p-3" id="modal-open")
+    img(src="assets/img/projects/project-3/logo/logo.svg")
+a(href="#" class="project-thumb p-4" id="modal-open")
+    img(src="assets/img/projects/project-4/logo/logo.svg")
+a(href="#" class="project-thumb p-5" id="modal-open")
+    img(src="assets/img/projects/project-5/logo/logo.svg")
+a(href="#" class="project-thumb p-6" id="modal-open")
+    img(src="assets/img/projects/project-6/logo/logo.svg")

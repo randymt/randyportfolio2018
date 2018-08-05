@@ -16,7 +16,7 @@
     min-height: 475px;
     margin: 0 auto 300px auto;
 
-    .project-item {
+    .project-thumb {
       display: grid;
       background: $white;
       border-radius: 5px;
@@ -24,6 +24,12 @@
       grid-template-column: 1fr;
       align-items: center;
       justify-content: center;
+      transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1);
+
+    }
 
 
       img {
@@ -44,7 +50,7 @@
     a.p-5 { background: $p-5-color;}
     a.p-6 {
       opacity: .8;
-      background: $p-6-color;
+      background: rgba(0, 0, 0, 0.2);
       border: 1px dashed $grey2;
 
       img {
