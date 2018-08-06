@@ -1,0 +1,74 @@
+.wrapper {
+	background: $light-grey;
+	text-align: center;
+	max-width: 1200px;
+	margin: 45px auto;
+	border-radius: 50px;
+	height: 2000px;
+
+	.home-logo {
+		background: $white;
+
+		img {
+			width: 80px;
+			float: right;
+			transform: rotate(45deg);
+			margin: 10px 10px 0 0;
+		}
+
+		:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	
+	.company-brand {
+		background: $white;
+		padding-bottom: 35px;
+		
+		img {
+			width: 200px;
+			margin-bottom: 20px;
+
+		}
+
+		h2 {
+			font-weight: $font-L;
+			color: $p-1-accent;
+			letter-spacing: 1px;
+		}
+
+		a i {
+			background: $light-grey;
+			padding: 12px;
+			border-radius: 50px;
+		}
+	}
+
+	// .arrow {
+	// 	display: block;
+	// 	background: $light-grey;
+ 
+	// 	border-left: 600px solid transparent;
+	// 	border-right: 600px solid transparent;
+		  
+	// 	border-top: 60px solid $white;
+	// }
+
+	.project-overview {
+		display: grid;
+		background: $light-grey;
+		grid-template-columns: 4fr 17fr 4fr;
+		margin-top: 45px;
+
+		p {
+			grid-column: 2 / -2;
+			color: $grey3;
+			line-height: 25px;
+			margin-bottom: 5px;
+		}
+	}
+
+}
+

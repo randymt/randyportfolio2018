@@ -34,11 +34,11 @@ gulp.task('jade', function() {
     }))
     .pipe(gulp.dest('./site'));
 
-    gulp.src('./jade-files/work-includes/*.jade')
+    gulp.src('./jade-files/work-profiles/*.jade')
       .pipe(jade({
         locals: YOUR_LOCALS
       }))
-      .pipe(gulp.dest('./site/work-loads'));
+      .pipe(gulp.dest('./site/work-profiles'))
 });
 
 
@@ -69,6 +69,7 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('./sass/*.scss', ['sass']);
     gulp.watch('./sass/sections/*.scss', ['sass']);
 
+    gulp.watch('./jade-files/work-profiles/*.jade',['jade']).on('change', browserSync.reload);
     gulp.watch('./jade-files/includes/*.jade',['jade']).on('change', browserSync.reload);
     gulp.watch('./jade-files/*.jade', ['jade']).on('change', browserSync.reload);
 });

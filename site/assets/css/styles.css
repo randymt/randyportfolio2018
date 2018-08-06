@@ -240,3 +240,46 @@ a {
     width: 200px;
     justify-content: space-between;
     margin: 0 auto; }
+
+.wrapper {
+  background: #f2f2f2;
+  text-align: center;
+  max-width: 1200px;
+  margin: 45px auto;
+  border-radius: 50px;
+  height: 2000px; }
+  .wrapper .home-logo {
+    background: #ffffff; }
+    .wrapper .home-logo img {
+      width: 80px;
+      float: right;
+      transform: rotate(45deg);
+      margin: 10px 10px 0 0; }
+    .wrapper .home-logo :after {
+      content: "";
+      display: table;
+      clear: both; }
+  .wrapper .company-brand {
+    background: #ffffff;
+    padding-bottom: 35px; }
+    .wrapper .company-brand img {
+      width: 200px;
+      margin-bottom: 20px; }
+    .wrapper .company-brand h2 {
+      font-weight: 300;
+      color: #FF4317;
+      letter-spacing: 1px; }
+    .wrapper .company-brand a i {
+      background: #f2f2f2;
+      padding: 12px;
+      border-radius: 50px; }
+  .wrapper .project-overview {
+    display: grid;
+    background: #f2f2f2;
+    grid-template-columns: 4fr 17fr 4fr;
+    margin-top: 45px; }
+    .wrapper .project-overview p {
+      grid-column: 2 / -2;
+      color: #707070;
+      line-height: 25px;
+      margin-bottom: 5px; }
