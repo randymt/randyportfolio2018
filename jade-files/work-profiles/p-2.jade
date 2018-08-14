@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet")
+    link(rel="stylesheet", href="../assets/css/styles.css")
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+    title Taschner || Portfolio
+
+  body
+    main.wrapper
+        include ../includes/project-header.jade
+        
+        
+        section.company-brand
+            img(src="../assets/img/projects/project-2/logo/logo.png", alt="Infinite Retires logo" class="company-logo")
+            h2.company-name.p-2 Brillo Construction Services
+            a(href="http://brillocs.com/" target="_blank" class="profile-link")
+                i(class="fas fa-link p-2")
+        
+        section.project-content
+            article.project-overview
+                p <a href="http://brillocs.com/" target="_blank" class="p-2-link" >Brillo</a> serves construction companies through out the Denver metro area. When you walk into a downtown skyrise the odds are you have seen their work.
+
+                p They wanted a quick and simple website to accompany their active social presence. Bells and whistles were not something they were interested in. The key points were consice and to the point.
+
+                p My goal was to keep everything on one page and not to direct anyone off the site in any way. Using modals as sections for information and galleries for images was a key role in keeping the visitors engaged. What Brillo was happy with was you can scan the website, get all the info you needed and onto contacting them with in a few min.
+
+                h3.p-2 Project Details:
+
+                ul
+                    li Bootstrap
+                    li Sass
+                    li One page layout
+                    li Modal service section
+                    li Easy sort image gallery
+                    li Photo retouching
+                
+            
+            article.project-examples
+                .example-item.item-1
+                    img(src="../assets/img/projects/project-2/project-examples/p-e-1.png", alt="Project")
+                .example-item.item-2
+                    img(src="../assets/img/projects/project-2/project-examples/p-e-2.png", alt="Project Logo")
+                .example-item.item-3
+                    img(src="../assets/img/projects/project-2/project-examples/p-e-3.png", alt="Project Logo")
+        
+    include ../includes/footer.jade
+
+            
+
+

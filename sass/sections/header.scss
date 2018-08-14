@@ -37,6 +37,10 @@
     margin-top: 60px;
     padding-bottom: 20px;
     border-bottom: 1px solid $grey2;
+
+    @media ( max-width:700px ) {
+      text-align: center;
+    }
   }
 
   .alt-text-color {

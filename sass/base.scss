@@ -9,6 +9,7 @@ body {
 }
 
 ::selection {
+  color: #7DB0E5;
   background: #731dd8;
 }
 
@@ -21,6 +22,7 @@ a {
   &:hover {
     color: $white;
   }
+
 }
 
 

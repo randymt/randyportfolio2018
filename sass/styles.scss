@@ -1,8 +1,17 @@
 @import 'vars.scss';
 @import 'base';
+
+
+
+
 @import './sections/header';
 @import './sections/work';
 @import './sections/xp';
 @import './sections/education';
 @import './sections/footer';
-@import './sections/work-profile-base';
+
+
+@import 'work-profile-base';
+@import 'project-controls';
+
+

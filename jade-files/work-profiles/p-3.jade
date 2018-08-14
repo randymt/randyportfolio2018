@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet")
+    link(rel="stylesheet", href="../assets/css/styles.css")
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+    title Taschner || Portfolio
+
+  body
+    main.wrapper
+        include ../includes/project-header.jade
+        
+        
+        section.company-brand
+            img(src="../assets/img/projects/project-3/logo/logo-2.png", alt="Green Butterfly Design logo" class="company-logo")
+            h2.company-name.p-3 Green Butterfly Design
+            a(href="https://www.greenbutterflydesign.com/" target="_blank")
+                i(class="fas fa-link p-3")
+        
+        section.project-content
+            article.project-overview
+                p Green Butterfly Design is an interior design company ran by a very talented Kim Linin. I have been working as her web master if you will since 2015.
+
+                p We started her portfolio with a customized bootstrap theme. Soon after her business started to grow, we realized wordpress would have great maintainance and scalability control.
+
+                p Even with the website up and running I perfom various tasks such as SEO, project updates, major website updates and mantenaince.
+
+                h3.p-3 Project Specs:
+
+                ul
+                    li Creative portfolio
+                    li Clean project profiles
+                    li Client maintainable
+                    li Elegant opening presentation
+                    li Easy to us image gallery
+                    li Wordpress
+                    li Mobile
+                    li Wordpress migration
+                    li SEO
+            
+            article.project-examples
+                .example-item.item-1
+                    img(src="../assets/img/projects/project-3/project-examples/p-e-1.png", alt="Project example 1")
+                .example-item.item-2
+                    img(src="../assets/img/projects/project-3/project-examples/p-e-2.png", alt="Project example 2")
+                .example-item.item-3
+                    img(src="../assets/img/projects/project-3/project-examples/p-e-3.png", alt="Project example 3")
+        
+    include ../includes/footer.jade
+
+            
+
+

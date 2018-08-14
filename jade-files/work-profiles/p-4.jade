@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet")
+    link(rel="stylesheet", href="../assets/css/styles.css")
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+    title Taschner || Portfolio
+
+  body
+    main.wrapper
+        include ../includes/project-header.jade
+        
+        
+        section.company-brand
+            img(src="../assets/img/projects/project-4/logo/logo-2.svg", alt="Lara's Paintbrush logo" class="company-logo")
+            h2.company-name.p-4 Lara's Paintbrush
+            a(href="http://laraspaintbrush.com" target="_blank")
+                i(class="fas fa-link p-4")
+        
+        section.project-content
+            article.project-overview
+                p Lara's Paintbrush is a teaser site to show potential buyers a little about Lara and bit about her painting style.
+
+                h3.p-4 Project Specs:
+
+                ul
+                    li Jekyll
+                    li Jade
+                    li Sass
+                    li Gulp
+                    li Dynamic Image Gallery
+                    li Art photography
+                    li Vectorizing art
+                    li CSS animations
+                    li Photography
+            
+            article.project-examples
+                .example-item.item-1
+                    img(src="../assets/img/projects/project-4/project-examples/p-e-1.png", alt="Project example 1")
+                .example-item.item-2
+                    img(src="../assets/img/projects/project-4/project-examples/p-e-2.png", alt="Project example 2")
+                .example-item.item-3
+                    img(src="../assets/img/projects/project-4/project-examples/p-e-3.png", alt="Project example 3")
+        
+    include ../includes/footer.jade
+
+            
+
+
