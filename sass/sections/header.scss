@@ -21,9 +21,19 @@
     height: 199px;
     width: 100%;
     background: url(../img/diamond-logo.png);
+    background-position: top;;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+
+    &:hover {
+    background: url(../img/rt-mountain.svg);
     background-position: top;
     background-repeat: no-repeat;
+    opacity: .2;
+
+    }
   }
+
 
   .name-title {
     font-size: 30px;
