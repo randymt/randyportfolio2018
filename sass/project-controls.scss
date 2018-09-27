@@ -7,8 +7,7 @@ i.p-1:hover { background: $p-1-accent !important; }
 
 // Project 2 accent controls
 
-.p-2 { color: $p-2-accent; }
-.p-2-link { color: $p-2-accent !important;}
+.p-2 { color: $p-2-accent;}
 
 i.p-2:hover { background: $p-2-accent !important; }
 
@@ -24,13 +23,14 @@ i.p-3:hover { background: $p-3-accent !important; }
 
 .p-4 { color: $p-4-accent; }
 
-i.p-4:hover { background: $p-4-accent !important; }
+.p-4:hover { background: $p-4-accent !important; }
 
 
 // Project 5 accent controls
 
 .p-5 { color: $p-5-color; }
 
+a.profile-link { margin-right: 20px;}
 i.p-5:hover { background: $p-5-color !important; }
 
 

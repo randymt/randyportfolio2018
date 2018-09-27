@@ -344,9 +344,6 @@ i.p-1:hover {
 .p-2 {
   color: #446ACD; }
 
-.p-2-link {
-  color: #446ACD !important; }
-
 i.p-2:hover {
   background: #446ACD !important; }
 
@@ -359,11 +356,14 @@ i.p-3:hover {
 .p-4 {
   color: #ff4e3e; }
 
-i.p-4:hover {
+.p-4:hover {
   background: #ff4e3e !important; }
 
 .p-5 {
   color: #AF272F; }
+
+a.profile-link {
+  margin-right: 20px; }
 
 i.p-5:hover {
   background: #AF272F !important; }
