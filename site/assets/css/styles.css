@@ -60,11 +60,6 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     transition: all .5s ease; }
-    .logo-container .logo:hover {
-      background: url(../img/rt-mountain.svg);
-      background-position: top;
-      background-repeat: no-repeat;
-      opacity: .2; }
   .logo-container .name-title {
     font-size: 30px;
     font-weight: 300;
@@ -168,8 +163,10 @@ p {
       background: #EBF4FD; }
     .work .project-container a.p-3 {
       background: #005861; }
+    .work .project-container a.p-3 {
+      background: #005861; }
     .work .project-container a.p-4 {
-      background-image: linear-gradient(to top left, #644CA9, #FF4E3E); }
+      background: linear-gradient(to top left, #644CA9, #FF4E3E); }
     .work .project-container a.p-5 {
       background: #AF272F; }
     .work .project-container a.p-6 {
@@ -325,6 +322,10 @@ main.wrapper {
         box-shadow: 2px 2px 2px 2px #e5e5e5;
         border-radius: 3px;
         width: 100%; }
+      main.wrapper section.project-content article.project-examples .example-item a > img {
+        transition: all 0.5s ease; }
+        main.wrapper section.project-content article.project-examples .example-item a > img:hover {
+          transform: translateY(-10px); }
       main.wrapper section.project-content article.project-examples .item-1 {
         grid-column: 1 / -3; }
       main.wrapper section.project-content article.project-examples .item-2 {
@@ -356,7 +357,7 @@ i.p-3:hover {
 .p-4 {
   color: #ff4e3e; }
 
-.p-4:hover {
+i.p-4:hover {
   background: #ff4e3e !important; }
 
 .p-5 {
